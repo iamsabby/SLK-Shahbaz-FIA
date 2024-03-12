@@ -1,0 +1,244 @@
+
+.description {
+    padding: 20px;
+    color: #333;
+    text-align: center; /* Center align the text */
+}
+/* Add these styles to your existing CSS */
+.description {
+    padding: 20px;
+    color: #fff; /* Change the text color to white */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background */
+    text-align: center; /* Center align the text */
+}
+
+.gallery p {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 18px; /* Adjust the font size as needed */
+    /* border: 2px solid #ccc;  */
+    padding: 31px; /* Add padding for better spacing */
+    padding-bottom: 20px;
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Set text color */
+}
+.gallery {
+    text-align: center;
+    padding: 50px 0;
+    border: 5px solid #ccc; /* Add border */
+    margin: 20px; /* Add some margin for spacing */
+}
+
+#small {
+    /* background-image: url('./assets/sindh.jpg'); */
+    background-size: cover; /* Adjusts the background image to cover the entire container */
+    background-position: center bottom; /* Crop from the bottom */
+    height: auto; /* Set the height to auto */
+    position: relative;
+    overflow: hidden; /* Hide the overflow to ensure the bottom crop */
+}
+
+.small-con {
+    width: calc(100% + 10px); /* Adjust width to cover the gap */
+    height: 100%; 
+    background-image: url('./assets/sindh.jpg');
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+    overflow: hidden;
+    margin-left: -5px; /* Offset the negative margin */
+    padding-right: 1px; /* Add padding to the right to cover the gap */
+    padding-left: 0px; /* Add padding to the left to cover the gap */
+}
+
+
+.small-con::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity as needed */
+}
+
+.small-con p {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('./assets/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */
+}
+
+/* Reset CSS */
+ul, li, nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 30px; /* Adjust logo height */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.contact-info{
+    margin: 50px;
+    margin-left: 70px;
+}
+.contact-info ul {
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li img {
+    width: 20px; /* Adjust logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px;
+}
+
+.gallery {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.gallery h2 {
+    margin-bottom: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container a {
+    margin: 0 10px;
+}
+
+.image-container img {
+    width: 200px; /* Adjust image width */
+    height: 200px; /* Adjust image height */
+    object-fit: cover;
+}
+
+/* Add this media query at the end of your CSS file */
+/* Add this media query at the end of your CSS file */
+@media screen and (max-width: 768px) {
+    .col-md-6 {
+        width: 100%; /* Set width to 100% for mobile devices */
+        padding: 0 15px; /* Add some padding to the columns */
+        box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    }
+
+    .gallery {
+        padding: 20px; /* Adjust padding for the gallery section on mobile */
+    }
+
+    .contact-info {
+        margin: 20px; /* Adjust margin for contact info on mobile */
+        margin-left: 0; /* Remove left margin on mobile */
+    }
+
+    .contact-info ul li {
+        display: block; /* Change list items to block for mobile */
+    }
+}
+
+/* Example of basic mobile styles using media queries */
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+  /* Adjust font sizes and spacing for mobile */
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust padding and margins for smaller screens */
+  .section-padding {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  /* Mobile Navigation Styles */
+  .navbar-nav .nav-link {
+    padding: 8px 10px; /* Adjust padding for mobile */
+    margin-right: 10px; /* Reduce margin between navigation items */
+  }
+}
+
+/* Example of more specific adjustments for mobile */
+@media screen and (max-width: 480px) {
+  /* Further adjustments for smaller mobile screens */
+  .section-padding {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+
+  /* Adjust font sizes for smaller screens */
+  body {
+    font-size: 12px;
+  }
+}
+
+.contact-container{
+    margin-left: 15px;
+}
+
+#clients{
+    margin: 30px;
+}
+
+#client{
+    margin: 20px;
+}
